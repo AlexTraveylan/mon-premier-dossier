@@ -1,0 +1,554 @@
+button{
+    background-color: white;
+}
+
+:root{
+    --zone:rgb(19, 19, 36);
+    --fond:#36393f;
+    --mini:#666a72;
+    --text:rgb(215, 216, 224);
+}
+
+@media (min-width:1101px){
+h1,h2{
+    text-align: center;
+    padding: 1%;
+    margin: 0;
+    background-color: white;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.tableau{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: center;
+    background-color: white;
+    padding-right: 1%;
+}
+
+.grid-container,.formtext{
+    background-color: white;
+    width: 800px;
+    padding: 1%;
+    margin: 1%;
+}
+
+.modifyform{
+    text-align: center;
+}
+
+.ulchat{
+    text-align: left;
+}
+
+.formtexterror{
+    color: rgb(172, 43, 43);
+}
+
+.videgrenierinsc{
+    margin: 0;
+}
+
+.partie1,.partie3,.modifypage{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: space-between;
+}
+
+.partie2,.mid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: space-between;
+}
+
+.eventtext0{
+    width: 800px;
+    background-color: white;
+    padding: 0 1%;
+}
+
+.eventtext1{
+    width: 800px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    padding: 0 1%;
+}
+
+.eventtext2{
+    width: 800px;
+}
+
+.partie1,.partie2,.partie3,.mid,.modifypage{
+    min-height: 780px;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 47.5% 5% 42.5%;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.videgrenierinsc{
+    text-align: center;
+}
+
+.registerform{
+    text-align: center;
+}
+
+.btnform,.btnsupp {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.5s;
+  }
+.btnform span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+.btnform span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+.btnform:hover {
+    background-color: #008941;
+  }
+.btnsupp:hover{
+    background-color: rgb(172, 43, 43);
+  }
+.btnform:hover span {
+    padding-right: 20px;
+  }
+.btnform:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+h6{
+    color: #008941;
+    text-align: center;
+    font-size: 18px;
+}
+
+.fliyer{
+    width: 800px;
+    padding: 1%;
+    margin: 1%;
+}
+
+.pied, header{
+    font-size: 15px;
+}
+
+}
+
+@media (max-width: 1100px){
+h1{
+    text-align: center;
+    padding: 0 0 2% 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255);
+}
+
+
+h2{
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255);
+    padding: 1%;
+    background-color: rgba(255, 255, 255);
+}
+
+.eventtext1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 12.5% 2.5% 85%;
+    margin: 0;
+}
+
+.registerform,.contactform{
+    border: 1px solid rgba(255, 255, 255);
+    background-color: rgba(255, 255, 255);
+    padding: 1%;
+    margin: 1% 1% ;
+
+}
+
+.registerform{
+    text-align: center;
+}
+
+fieldset{
+    text-align: center;
+}
+
+
+.ulbody,.formbody,.formtext,.textbody,.videgrenierinsc,.formtexterror,.modifyform,.ulvidegrenier{
+    border: 1px solid rgba(255, 255, 255);
+    padding: 1% 10px;
+    background-color: rgba(255, 255, 255);
+}
+
+.formtexterror{
+    color: rgb(172, 43, 43);
+}
+
+.videgrenierinsc{
+    text-align: center;
+}
+
+.modifyform{
+    text-align: center;
+    background-color: rgba(255, 255, 255);
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+}
+
+
+
+.btnform,.btnsupp {
+    display: inline-block;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+.btnform {
+    background-color: rgba(255, 255, 255);
+  }
+.btnsupp{
+    background-color: rgb(172, 43, 43);
+  }
+
+.tableau{
+    font-size: 9px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: left;
+    background-color: white;
+    transform: translateX(-40px);
+}
+
+h6{
+    color: #008941;
+    text-align: center;
+    font-size: 9px;
+}
+
+.videgrenierinsc{
+    margin: 0;
+}
+
+.pied, header{
+    font-size: 12px;
+}
+
+}
+
+.configchat{
+    text-align: center;
+    background-color: var(--fond);
+}
+
+.btnmess{
+    position: sticky;
+    width: 35px;
+    height: 35px;
+    display: inline;
+    border: 1px solid #36393f;
+    background-color: #36393f;
+    color: var(--text);
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5px;
+    border-radius: 50%;
+    z-index: 5;
+    transform: translateY(-50%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btnmess:hover{
+    background-color: #008941;
+}
+
+
+.messchat{
+    color: #008941;
+}
+
+.mainmessage{
+    color: rgb(215, 216, 224);
+}
+
+.eventtext2{
+    background-color: white;
+    margin-top: 0.5%;
+    padding: 1%;
+}
+
+
+.chat{
+    background-color: var(--fond);
+    z-index: 2;
+    padding: 10px;
+}
+
+.mess{
+    background-color: var(--zone);
+    border-radius: 5px;
+    border: 1px solid var(--zone);
+    color: var(--text);
+    width: 80%;
+    margin:1%;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+.datemess,.minimess{
+    color: var(--mini);
+    font-size: 10px;
+}
+
+.modifiermessage{
+    color:rgb(145, 96, 6);
+    font-size: 10px;
+    transition: all 0.3s;
+}
+
+.modifiermessage:hover{
+    color:rgb(204, 153, 58);
+    font-size: 12px;
+}
+
+.supprimermessage{
+    color: rgb(148, 0, 0);
+    font-size: 10px;
+    transition: all 0.3s;
+}
+.supprimermessage:hover{
+    color: rgb(218, 47, 47);
+    font-size: 12px;
+}
+
+.bonjour{
+    text-align: right;
+    padding-right: 30px;
+}
+
+.pied, header{
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.partie1,.mid{
+    background: url("./assets/ecole2.jpeg") center/cover fixed no-repeat;
+}
+
+.partie2,.modifypage{
+    background: url("./assets/ecole1.jpeg") center/cover fixed no-repeat;
+}
+
+.partie3{
+    background: url("./assets/marelle.jpg") center/cover fixed no-repeat;
+}
+
+.fliyer{
+    background-color: white;
+    text-align: center;
+}
+
+.logo{
+    position: absolute;
+    text-align: center;
+}
+
+h5{
+    color: #008941;
+    text-align: center;
+    font-size: 20px;
+}
+
+.error{
+    color: rgb(172, 43, 43);
+}
+
+.modified{
+    color: #008941;
+}
+
+.notmodified{
+    color: rgb(172, 43, 43);
+}
+
+.btncnx,.btndcnx{
+    display: inline-block;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.5s;
+}
+
+.btncnx:hover {
+    background-color: #008941;
+  }
+
+.btndcnx:hover {
+    background-color: rgb(139, 60, 60);
+}
+
+.pagination{
+    text-align: center;
+}
+
+
+
+.adminul{
+    padding: 1% 0 1% 5%;
+    margin-top: 1%;
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 260px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: -290px;
+    background-color: white;
+    /* transition: left 0.5s ease; */
+    transition: 0.8s;
+    margin: 0;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 0;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.2s;
+    margin: 5px;
+    border: 1px solid rgba(236, 243, 243);
+    background-color: rgba(236, 243, 243);
+    text-align: center;
+  }
+
+  .sidenav a:hover {
+    color: #5cc08e;
+    background-color: rgba(114, 105, 145, 0.9);
+  }
+
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  
+  /* Active class */
+  .sidenav.active {
+    top: 70px;
+  }
+
+.menu-icon{
+    position: relative; 
+    width: 54px;
+    height: 54px; 
+
+    transition: transform 0.5s;
+    z-index: 5;
+}
+
+.menu-icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+
+    display: block;
+    width: 22px;
+    height: 2px;
+
+    background-color: rgb(24, 95, 24);
+}
+
+.menu-icon span::before, .menu-icon span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-6px);
+
+    display: block;
+    width: 22px;
+    height: 2px;
+
+    background-color: rgb(24, 95, 24);
+
+    transition: transform 0.5s;
+}
+.menu-icon span::after {
+    transform: translateY(6px); 
+}
+
+.menu-icon.is-opened span { background: transparent; z-index: 5; }
+.menu-icon.is-opened span::before { transform: translateY(0) rotate(45deg); }
+.menu-icon.is-opened span::after { transform: translateY(0) rotate(-45deg); }
+
+.menu-icon.is-opened { transform: rotate(180deg); }
+
+.colonnetab{
+    list-style-type: none;
+}
